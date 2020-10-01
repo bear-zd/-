@@ -7,7 +7,7 @@ base_url="https://newsso.shu.edu.cn/login"
 #导入库
 options = webdriver.ChromeOptions()
 options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36')#UA伪装
-options.add('--headless')#隐藏浏览器界面
+options.add_argument('--headless')#隐藏浏览器界面
 driver = webdriver.Chrome(chrome_options = options)
 driver.get(base_url)
 #使用之前需要安装selenium库并安装chorme驱动
